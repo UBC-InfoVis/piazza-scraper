@@ -1,0 +1,32 @@
+{
+  "name": "Scrape Piazza",
+  "version": "1.0",
+  "description": "Scrape student names from Piazza posts",
+  "permissions": ["activeTab", "declarativeContent", "storage", "downloads"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2,
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.piazza.com/*"],
+      "js": ["jquery-3.5.1.min.js", "contentscript.js"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+}

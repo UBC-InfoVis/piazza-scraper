@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 400px;
+        max-height: 400px;
+      }
+      button {
+        height: 30px;
+        outline: none;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      table thead th {
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        min-width: 100px;
+        text-align: left;
+      }
+      table tbody td {
+        border-bottom: 1px solid #ddd;
+        padding-right: 10px;
+      }
+      #students {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn-scrape">Scrape current page</button>
+    <button id="btn-export">Export as CSV</button>
+    <button id="btn-reset">Reset</button>
+    <p id='pagetitle'></p>
+    
+    <h1>Students</h1>
+    <span id="msg-no-students" class="msg">No posts recorded.</span>
+    <table class="sorttable" id="students">
+      <thead>
+        <tr>
+          <th>Student</th>
+          <th>Posted</th>
+          <th>Responded</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="jquery.tablesorter.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
