@@ -1,6 +1,8 @@
 ![image](https://user-images.githubusercontent.com/6393772/134575691-2230c787-4abb-4138-8f85-f0b02cc244fe.png)
 # Scrape Piazza
-__Chrome extension to scrape student names from Piazza and summarize participation.__
+_Chrome extension to scrape student names from Piazza and summarize participation._
+
+The scraper works as of 2021-09-23. If Piazza updates their HTML structure, the scraper will have to be updated.
 
 ## Install
 
@@ -10,8 +12,6 @@ __Chrome extension to scrape student names from Piazza and summarize participati
 - Click the LOAD UNPACKED button and select the “Scrape Piazza” extension directory.
 - Ta-da! The extension has been successfully installed.
 ![image](https://user-images.githubusercontent.com/6393772/134575730-b3e40ef7-458b-4f76-bbf8-2b9516277a69.png)
-
-
 
 ## Usage
 
